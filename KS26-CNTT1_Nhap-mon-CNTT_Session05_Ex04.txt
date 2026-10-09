@@ -1,0 +1,30 @@
+Bài 4: Xử lý lỗi đường dẫn khi triển khai dự án
+Phần 1: So sánh Absolute Path và Relative Path
+Absolute Path (Đường dẫn tuyệt đối)
+
+Ví dụ: C:\Users\An-K26\FarmProject\data\logs.csv
+
+Độ dài: Thường dài vì chứa đầy đủ đường dẫn đến tệp.
+
+Tính di động: Thấp, vì đường dẫn có thể không tồn tại trên máy tính của người khác.
+
+Ưu điểm: Xác định chính xác vị trí của tệp.
+
+Nhược điểm: Phụ thuộc vào ổ đĩa, tên người dùng và cấu trúc thư mục trên máy tính.
+
+Relative Path (Đường dẫn tương đối)
+
+Ví dụ: ../data/logs.csv
+
+Độ dài: Thường ngắn gọn hơn đường dẫn tuyệt đối.
+
+Tính di động: Cao hơn, vì có thể sử dụng khi gửi dự án cho người khác nếu cấu trúc thư mục được giữ nguyên.
+
+Ưu điểm: Dễ dàng chia sẻ và triển khai dự án trên nhiều máy tính.
+
+Nhược điểm: Phụ thuộc vào thư mục làm việc hoặc vị trí được dùng làm mốc xác định đường dẫn.
+
+Phần 2: Lựa chọn giải pháp tối ưu
+Em chọn Relative Path (Đường dẫn tương đối) với đường dẫn ../data/logs.csv vì giải pháp này giúp dự án dễ dàng di chuyển và chia sẻ cho người khác mà không phụ thuộc vào tên ổ đĩa hay tên người dùng trên máy tính.
+
+Ký hiệu .. có nghĩa là thư mục cha, tức là thư mục nằm ngay phía trên thư mục hiện tại. Vì vậy, ../data/logs.csv có nghĩa là đi lên một cấp thư mục, sau đó truy cập vào thư mục data để tìm tệp logs.csv.
